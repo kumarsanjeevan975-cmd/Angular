@@ -1,0 +1,34 @@
+.btn {
+    height: 78px;
+    width: 80px;
+    background-color: black;
+    border-radius: 50%;
+    text-align: center;
+    margin: 20px;
+}
+
+.btn2 {
+    height: 78px;
+    width: 80px;
+    background-color: rgb(203, 190, 190);
+    border-radius: 50%;
+    text-align: center;
+    margin: 20px;
+}
+
+.btn3 {
+    height: 78px;
+    width: 80px;
+    background-color: rgb(194, 29, 29);
+    border-radius: 50%;
+    text-align: center;
+    margin: 20px;
+}
+
+.button1 {
+    height: 20px;
+    width: 80px;
+    background-color: green;
+    color: white;
+    border: 2px solid blue;
+}

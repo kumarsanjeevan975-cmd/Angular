@@ -1,0 +1,12 @@
+<p>counter-app works!</p>
+
+<h1>{{counter}}</h1>
+<button (click)="sum()" class="btn bg-1" >increase</button>
+<button class="btn bg-2" (click)="subtract()">decrease</button>
+<button class="btn bg-3" (click)="reset()">reset 0</button>
+
+<!-- You can do it like this too -->
+
+<button (click)="handleBtn('plus')" class="btn bg-1" >increase</button>
+<button class="btn bg-2" (click)="handleBtn('minus')">decrease</button>
+<button class="btn bg-3" (click)="handleBtn('reset')">reset 0</button>

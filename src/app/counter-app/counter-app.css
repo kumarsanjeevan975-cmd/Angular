@@ -1,0 +1,24 @@
+.btn {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.bg-1{
+    background-color: aqua;
+}
+
+.bg-2{
+    background-color: black;
+}
+
+.bg-3{
+    background-color: red;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
