@@ -1,0 +1,51 @@
+<p>contexual works!</p>
+
+@for(user of users;track user)
+{
+    <h1> {{$index+1}}.{{user}}</h1>
+}
+
+
+<!-- you can do like this too -->
+<!-- @for(user of users;track user;let i=$index)
+{
+    <h1> {{i+1}}.{{user}}</h1>
+} -->
+
+<!-- agar tumhe first and last user niklna hai to simply {{$last}}. {{$first}}. ye true and false me result deta hai -->
+
+@for(user of users;track user)
+{   
+    @if($last)
+    {
+         <h1 style="color: rgb(153, 87, 51);"> {{$index}}.{{user}}</h1>
+    }
+    @else {
+         <h1> {{$index}}.{{user}}</h1>
+    }
+   
+}
+
+<!-- you can also use @odd,@even -->
+
+@for(user of users;track user)
+{   
+    @if($odd)
+    {
+         <h1 style="color: rgb(115, 169, 183);"> {{$index}}.{{user}}</h1>
+    }
+    <!-- //help to count  -->
+   <h3>{{$count}}</h3>
+}
+
+
+<!-- isme agar users me data hua to for loop chlega and sare print hoge nhi to @empty chlega -->
+
+@for (item of users; track item) {
+  <p>{{item}}</p>
+}
+@empty {
+  <p>No data found 😢</p>
+}
+
+

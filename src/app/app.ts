@@ -7,10 +7,16 @@ import { EventControl } from './event-control/event-control';
 import { GetSetValue } from './get-set-value/get-set-value';
 // import { CssAngular } from './IFELSE/css-angular';
 import { IfELSE } from './if-else/if-else';
+import { Compsignals } from './compsignals/compsignals';
+import { Contexual } from './contexual/contexual';
+import { TwoWayBindingsAng } from './two-way-binding/two-way-binding';
+import { ToDoList } from './to-do-list/to-do-list';
+import { Directive } from '@angular/compiler';
+import { DirectiveCom } from './directive/directive';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Login,Signup,EventControl,GetSetValue,IfELSE],
+  imports: [RouterOutlet,Login,Signup,EventControl,GetSetValue,IfELSE,Compsignals,Contexual,TwoWayBindingsAng,ToDoList,DirectiveCom],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
