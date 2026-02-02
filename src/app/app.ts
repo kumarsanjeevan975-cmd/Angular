@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { Login } from './login/login';
 import { Signup } from './signup/signup';
 import { CounterApp } from './counter-app/counter-app';
@@ -13,10 +13,14 @@ import { TwoWayBindingsAng } from './two-way-binding/two-way-binding';
 import { ToDoList } from './to-do-list/to-do-list';
 import { Directive } from '@angular/compiler';
 import { DirectiveCom } from './directive/directive';
+import { Header } from './header/header';
+import { Home } from './home/home';
+// import { Profile } from './profile/profile';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Login,Signup,EventControl,GetSetValue,IfELSE,Compsignals,Contexual,TwoWayBindingsAng,ToDoList,DirectiveCom],
+  imports: [RouterOutlet,RouterLink,Login,Signup,EventControl,GetSetValue,IfELSE,Compsignals,Contexual,TwoWayBindingsAng,ToDoList,DirectiveCom,Header,Home],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
